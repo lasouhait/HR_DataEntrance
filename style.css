@@ -108,43 +108,658 @@ button.color-text-menu-top,.color-bg-menu-top {
   
 }
 
-[color-text=indianred] {
-  --text-color: indianred;
+[color-bg=pink] {
+  --bg-color: pink;
   
 }
 
-[color-text=lightcoral] {
-  --text-color: lightcoral;
+[color-bg=lightpink] {
+  --bg-color: lightpink;
   
 }
 
-[color-text=salmon] {
-  --text-color: salmon;
+[color-bg=hotpink] {
+  --bg-color: hotpink;
   
 }
 
-[color-text=darksalmon] {
-  --text-color: darksalmon;
+[color-bg=deeppink] {
+  --bg-color: deeppink;
   
 }
 
-[color-text=crimson] {
-  --text-color: crimson;
+[color-bg=mediumvioletred] {
+  --bg-color: mediumvioletred;
   
 }
 
-[color-text=red] {
-  --text-color: red;
+[color-bg=palevioletred] {
+  --bg-color: palevioletred;
   
 }
 
-[color-text=firebrick] {
-  --text-color: firebrick;
+[color-bg=lightsalmon] {
+  --bg-color: lightsalmon;
   
 }
 
-[color-text=darkred] {
-  --text-color: darkred;
+[color-bg=coral] {
+  --bg-color: coral;
+  
+}
+
+[color-bg=tomato] {
+  --bg-color: tomato;
+  
+}
+
+[color-bg=orangered] {
+  --bg-color: orangered;
+  
+}
+
+[color-bg=darkorange] {
+  --bg-color: darkorange;
+  
+}
+
+[color-bg=orange] {
+  --bg-color: orange;
+  
+}
+
+[color-bg=gold] {
+  --bg-color: gold;
+  
+}
+
+[color-bg=yellow] {
+  --bg-color: yellow;
+  
+}
+
+[color-bg=lightyellow] {
+  --bg-color: lightyellow;
+  
+}
+
+[color-bg=lemonchiffon] {
+  --bg-color: lemonchiffon;
+  
+}
+
+[color-bg=lightgoldenrodyellow] {
+  --bg-color: lightgoldenrodyellow;
+  
+}
+
+[color-bg=papayawhip] {
+  --bg-color: papayawhip;
+  
+}
+
+[color-bg=moccasin] {
+  --bg-color: moccasin;
+  
+}
+
+[color-bg=peachpuff] {
+  --bg-color: peachpuff;
+  
+}
+
+[color-bg=palegoldenrod] {
+  --bg-color: palegoldenrod;
+  
+}
+
+[color-bg=khaki] {
+  --bg-color: khaki;
+  
+}
+
+[color-bg=darkkhaki] {
+  --bg-color: darkkhaki;
+  
+}
+
+[color-bg=lavender] {
+  --bg-color: lavender;
+  
+}
+
+[color-bg=thistle] {
+  --bg-color: thistle;
+  
+}
+
+[color-bg=plum] {
+  --bg-color: plum;
+  
+}
+
+[color-bg=violet] {
+  --bg-color: violet;
+  
+}
+
+[color-bg=orchid] {
+  --bg-color: orchid;
+  
+}
+
+[color-bg=fuchsia] {
+  --bg-color: fuchsia;
+  
+}
+
+[color-bg=mediumorchid] {
+  --bg-color: mediumorchid;
+  
+}
+
+[color-bg=mediumpurple] {
+  --bg-color: mediumpurple;
+  
+}
+
+[color-bg=rebeccapurple] {
+  --bg-color: rebeccapurple;
+  
+}
+
+[color-bg=blueviolet] {
+  --bg-color: blueviolet;
+  
+}
+
+[color-bg=darkviolet] {
+  --bg-color: darkviolet;
+  
+}
+
+[color-bg=darkorchid] {
+  --bg-color: darkorchid;
+  
+}
+
+[color-bg=darkmagenta] {
+  --bg-color: darkmagenta;
+  
+}
+
+[color-bg=purple] {
+  --bg-color: purple;
+  
+}
+
+[color-bg=indigo] {
+  --bg-color: indigo;
+  
+}
+
+[color-bg=slateblue] {
+  --bg-color: slateblue;
+  
+}
+
+[color-bg=darkslateblue] {
+  --bg-color: darkslateblue;
+  
+}
+
+[color-bg=mediumslateblue] {
+  --bg-color: mediumslateblue;
+  
+}
+
+[color-bg=greenyellow] {
+  --bg-color: greenyellow;
+  
+}
+
+[color-bg=chartreuse] {
+  --bg-color: chartreuse;
+  
+}
+
+[color-bg=lawngreen] {
+  --bg-color: lawngreen;
+  
+}
+
+[color-bg=lime] {
+  --bg-color: lime;
+  
+}
+
+[color-bg=limegreen] {
+  --bg-color: limegreen;
+  
+}
+
+[color-bg=palegreen] {
+  --bg-color: palegreen;
+  
+}
+
+[color-bg=lightgreen] {
+  --bg-color: lightgreen;
+  
+}
+
+[color-bg=mediumspringgreen] {
+  --bg-color: mediumspringgreen;
+  
+}
+
+[color-bg=springgreen] {
+  --bg-color: springgreen;
+  
+}
+
+[color-bg=mediumseagreen] {
+  --bg-color: mediumseagreen;
+  
+}
+
+[color-bg=seagreen] {
+  --bg-color: seagreen;
+  
+}
+
+[color-bg=forestgreen] {
+  --bg-color: forestgreen;
+  
+}
+
+[color-bg=green] {
+  --bg-color: green;
+  
+}
+
+[color-bg=darkgreen] {
+  --bg-color: darkgreen;
+  
+}
+
+[color-bg=yellowgreen] {
+  --bg-color: yellowgreen;
+  
+}
+
+[color-bg=olivedrab] {
+  --bg-color: olivedrab;
+  
+}
+
+[color-bg=olive] {
+  --bg-color: olive;
+  
+}
+
+[color-bg=darkolivegreen] {
+  --bg-color: darkolivegreen;
+  
+}
+
+[color-bg=mediumaquamarine] {
+  --bg-color: mediumaquamarine;
+  
+}
+
+[color-bg=darkseagreen] {
+  --bg-color: darkseagreen;
+  
+}
+
+[color-bg=lightseagreen] {
+  --bg-color: lightseagreen;
+  
+}
+
+[color-bg=darkcyan] {
+  --bg-color: darkcyan;
+  
+}
+
+[color-bg=teal] {
+  --bg-color: teal;
+  
+}
+
+[color-bg=cyan] {
+  --bg-color: cyan;
+  
+}
+
+[color-bg=lightcyan] {
+  --bg-color: lightcyan;
+  
+}
+
+[color-bg=paleturquoise] {
+  --bg-color: paleturquoise;
+  
+}
+
+[color-bg=aquamarine] {
+  --bg-color: aquamarine;
+  
+}
+
+[color-bg=turquoise] {
+  --bg-color: turquoise;
+  
+}
+
+[color-bg=mediumturquoise] {
+  --bg-color: mediumturquoise;
+  
+}
+
+[color-bg=darkturquoise] {
+  --bg-color: darkturquoise;
+  
+}
+
+[color-bg=cadetblue] {
+  --bg-color: cadetblue;
+  
+}
+
+[color-bg=steelblue] {
+  --bg-color: steelblue;
+  
+}
+
+[color-bg=lightsteelblue] {
+  --bg-color: lightsteelblue;
+  
+}
+
+[color-bg=powderblue] {
+  --bg-color: powderblue;
+  
+}
+
+[color-bg=lightblue] {
+  --bg-color: lightblue;
+  
+}
+
+[color-bg=skyblue] {
+  --bg-color: skyblue;
+  
+}
+
+[color-bg=lightskyblue] {
+  --bg-color: lightskyblue;
+  
+}
+
+[color-bg=deepskyblue] {
+  --bg-color: deepskyblue;
+  
+}
+
+[color-bg=dodgerblue] {
+  --bg-color: dodgerblue;
+  
+}
+
+[color-bg=cornflowerblue] {
+  --bg-color: cornflowerblue;
+  
+}
+
+[color-bg=royalblue] {
+  --bg-color: royalblue;
+  
+}
+
+[color-bg=blue] {
+  --bg-color: blue;
+  
+}
+
+[color-bg=mediumblue] {
+  --bg-color: mediumblue;
+  
+}
+
+[color-bg=darkblue] {
+  --bg-color: darkblue;
+  
+}
+
+[color-bg=navy] {
+  --bg-color: navy;
+  
+}
+
+[color-bg=midnightblue] {
+  --bg-color: midnightblue;
+  
+}
+
+[color-bg=cornsilk] {
+  --bg-color: cornsilk;
+  
+}
+
+[color-bg=blanchedalmond] {
+  --bg-color: blanchedalmond;
+  
+}
+
+[color-bg=bisque] {
+  --bg-color: bisque;
+  
+}
+
+[color-bg=navajowhite] {
+  --bg-color: navajowhite;
+  
+}
+
+[color-bg=wheat] {
+  --bg-color: wheat;
+  
+}
+
+[color-bg=burlywood] {
+  --bg-color: burlywood;
+  
+}
+
+[color-bg=tan] {
+  --bg-color: tan;
+  
+}
+
+[color-bg=rosybrown] {
+  --bg-color: rosybrown;
+  
+}
+
+[color-bg=sandybrown] {
+  --bg-color: sandybrown;
+  
+}
+
+[color-bg=goldenrod] {
+  --bg-color: goldenrod;
+  
+}
+
+[color-bg=darkgoldenrod] {
+  --bg-color: darkgoldenrod;
+  
+}
+
+[color-bg=peru] {
+  --bg-color: peru;
+  
+}
+
+[color-bg=chocolate] {
+  --bg-color: chocolate;
+  
+}
+
+[color-bg=saddlebrown] {
+  --bg-color: saddlebrown;
+  
+}
+
+[color-bg=sienna] {
+  --bg-color: sienna;
+  
+}
+
+[color-bg=brown] {
+  --bg-color: brown;
+  
+}
+
+[color-bg=maroon] {
+  --bg-color: maroon;
+  
+}
+
+[color-bg=white] {
+  --bg-color: white;
+  
+}
+
+[color-bg=snow] {
+  --bg-color: snow;
+  
+}
+
+[color-bg=honeydew] {
+  --bg-color: honeydew;
+  
+}
+
+[color-bg=mintcream] {
+  --bg-color: mintcream;
+  
+}
+
+[color-bg=azure] {
+  --bg-color: azure;
+  
+}
+
+[color-bg=aliceblue] {
+  --bg-color: aliceblue;
+  
+}
+
+[color-bg=ghostwhite] {
+  --bg-color: ghostwhite;
+  
+}
+
+[color-bg=whitesmoke] {
+  --bg-color: whitesmoke;
+  
+}
+
+[color-bg=seashell] {
+  --bg-color: seashell;
+  
+}
+
+[color-bg=beige] {
+  --bg-color: beige;
+  
+}
+
+[color-bg=oldlace] {
+  --bg-color: oldlace;
+  
+}
+
+[color-bg=floralwhite] {
+  --bg-color: floralwhite;
+  
+}
+
+[color-bg=ivory] {
+  --bg-color: ivory;
+  
+}
+
+[color-bg=antiquewhite] {
+  --bg-color: antiquewhite;
+  
+}
+
+[color-bg=linen] {
+  --bg-color: linen;
+  
+}
+
+[color-bg=lavenderblush] {
+  --bg-color: lavenderblush;
+  
+}
+
+[color-bg=mistyrose] {
+  --bg-color: mistyrose;
+  
+}
+
+[color-bg=gainsboro] {
+  --bg-color: gainsboro;
+  
+}
+
+[color-bg=lightgray] {
+  --bg-color: lightgray;
+  
+}
+
+[color-bg=silver] {
+  --bg-color: silver;
+  
+}
+
+[color-bg=darkgray] {
+  --bg-color: darkgray;
+  
+}
+
+[color-bg=gray] {
+  --bg-color: gray;
+  
+}
+
+[color-bg=dimgray] {
+  --bg-color: dimgray;
+  
+}
+
+[color-bg=lightslategray] {
+  --bg-color: lightslategray;
+  
+}
+
+[color-bg=slategray] {
+  --bg-color: slategray;
+  
+}
+
+[color-bg=darkslategray] {
+  --bg-color: darkslategray;
+  
+}
+
+[color-bg=black] {
+  --bg-color: black;
   
 }
 

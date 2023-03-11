@@ -1,0 +1,725 @@
+button.style-control {
+  border: 0;
+  color: var(--text-color);
+  transition: color 0.8s 0.2s;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+[color-palette=indianred] {
+  --bg-color: indianred;
+  --text-color: black;
+}
+
+[color-palette=lightcoral] {
+  --bg-color: lightcoral;
+  --text-color: black;
+}
+
+[color-palette=salmon] {
+  --bg-color: salmon;
+  --text-color: black;
+}
+
+[color-palette=darksalmon] {
+  --bg-color: darksalmon;
+  --text-color: black;
+}
+
+[color-palette=crimson] {
+  --bg-color: crimson;
+  --text-color: white;
+}
+
+[color-palette=red] {
+  --bg-color: red;
+  --text-color: white;
+}
+
+[color-palette=firebrick] {
+  --bg-color: firebrick;
+  --text-color: white;
+}
+
+[color-palette=darkred] {
+  --bg-color: darkred;
+  --text-color: white;
+}
+
+[color-palette=pink] {
+  --bg-color: pink;
+  --text-color: black;
+}
+
+[color-palette=lightpink] {
+  --bg-color: lightpink;
+  --text-color: black;
+}
+
+[color-palette=hotpink] {
+  --bg-color: hotpink;
+  --text-color: black;
+}
+
+[color-palette=deeppink] {
+  --bg-color: deeppink;
+  --text-color: black;
+}
+
+[color-palette=mediumvioletred] {
+  --bg-color: mediumvioletred;
+  --text-color: white;
+}
+
+[color-palette=palevioletred] {
+  --bg-color: palevioletred;
+  --text-color: black;
+}
+
+[color-palette=lightsalmon] {
+  --bg-color: lightsalmon;
+  --text-color: black;
+}
+
+[color-palette=coral] {
+  --bg-color: coral;
+  --text-color: black;
+}
+
+[color-palette=tomato] {
+  --bg-color: tomato;
+  --text-color: black;
+}
+
+[color-palette=orangered] {
+  --bg-color: orangered;
+  --text-color: black;
+}
+
+[color-palette=darkorange] {
+  --bg-color: darkorange;
+  --text-color: black;
+}
+
+[color-palette=orange] {
+  --bg-color: orange;
+  --text-color: white;
+}
+
+[color-palette=gold] {
+  --bg-color: gold;
+  --text-color: black;
+}
+
+[color-palette=yellow] {
+  --bg-color: yellow;
+  --text-color: black;
+}
+
+[color-palette=lightyellow] {
+  --bg-color: lightyellow;
+  --text-color: black;
+}
+
+[color-palette=lemonchiffon] {
+  --bg-color: lemonchiffon;
+  --text-color: black;
+}
+
+[color-palette=lightgoldenrodyellow] {
+  --bg-color: lightgoldenrodyellow;
+  --text-color: black;
+}
+
+[color-palette=papayawhip] {
+  --bg-color: papayawhip;
+  --text-color: black;
+}
+
+[color-palette=moccasin] {
+  --bg-color: moccasin;
+  --text-color: black;
+}
+
+[color-palette=peachpuff] {
+  --bg-color: peachpuff;
+  --text-color: black;
+}
+
+[color-palette=palegoldenrod] {
+  --bg-color: palegoldenrod;
+  --text-color: black;
+}
+
+[color-palette=khaki] {
+  --bg-color: khaki;
+  --text-color: black;
+}
+
+[color-palette=darkkhaki] {
+  --bg-color: darkkhaki;
+  --text-color: black;
+}
+
+[color-palette=lavender] {
+  --bg-color: lavender;
+  --text-color: black;
+}
+
+[color-palette=thistle] {
+  --bg-color: thistle;
+  --text-color: black;
+}
+
+[color-palette=plum] {
+  --bg-color: plum;
+  --text-color: black;
+}
+
+[color-palette=violet] {
+  --bg-color: violet;
+  --text-color: black;
+}
+
+[color-palette=orchid] {
+  --bg-color: orchid;
+  --text-color: black;
+}
+
+[color-palette=fuchsia] {
+  --bg-color: fuchsia;
+  --text-color: black;
+}
+
+[color-palette=mediumorchid] {
+  --bg-color: mediumorchid;
+  --text-color: black;
+}
+
+[color-palette=mediumpurple] {
+  --bg-color: mediumpurple;
+  --text-color: black;
+}
+
+[color-palette=rebeccapurple] {
+  --bg-color: rebeccapurple;
+  --text-color: white;
+}
+
+[color-palette=blueviolet] {
+  --bg-color: blueviolet;
+  --text-color: black;
+}
+
+[color-palette=darkviolet] {
+  --bg-color: darkviolet;
+  --text-color: white;
+}
+
+[color-palette=darkorchid] {
+  --bg-color: darkorchid;
+  --text-color: white;
+}
+
+[color-palette=darkmagenta] {
+  --bg-color: darkmagenta;
+  --text-color: white;
+}
+
+[color-palette=purple] {
+  --bg-color: purple;
+  --text-color: white;
+}
+
+[color-palette=indigo] {
+  --bg-color: indigo;
+  --text-color: white;
+}
+
+[color-palette=slateblue] {
+  --bg-color: slateblue;
+  --text-color: white;
+}
+
+[color-palette=darkslateblue] {
+  --bg-color: darkslateblue;
+  --text-color: white;
+}
+
+[color-palette=mediumslateblue] {
+  --bg-color: mediumslateblue;
+  --text-color: black;
+}
+
+[color-palette=greenyellow] {
+  --bg-color: greenyellow;
+  --text-color: black;
+}
+
+[color-palette=chartreuse] {
+  --bg-color: chartreuse;
+  --text-color: black;
+}
+
+[color-palette=lawngreen] {
+  --bg-color: lawngreen;
+  --text-color: black;
+}
+
+[color-palette=lime] {
+  --bg-color: lime;
+  --text-color: black;
+}
+
+[color-palette=limegreen] {
+  --bg-color: limegreen;
+  --text-color: black;
+}
+
+[color-palette=palegreen] {
+  --bg-color: palegreen;
+  --text-color: black;
+}
+
+[color-palette=lightgreen] {
+  --bg-color: lightgreen;
+  --text-color: black;
+}
+
+[color-palette=mediumspringgreen] {
+  --bg-color: mediumspringgreen;
+  --text-color: black;
+}
+
+[color-palette=springgreen] {
+  --bg-color: springgreen;
+  --text-color: black;
+}
+
+[color-palette=mediumseagreen] {
+  --bg-color: mediumseagreen;
+  --text-color: black;
+}
+
+[color-palette=seagreen] {
+  --bg-color: seagreen;
+  --text-color: black;
+}
+
+[color-palette=forestgreen] {
+  --bg-color: forestgreen;
+  --text-color: black;
+}
+
+[color-palette=green] {
+  --bg-color: green;
+  --text-color: white;
+}
+
+[color-palette=darkgreen] {
+  --bg-color: darkgreen;
+  --text-color: white;
+}
+
+[color-palette=yellowgreen] {
+  --bg-color: yellowgreen;
+  --text-color: black;
+}
+
+[color-palette=olivedrab] {
+  --bg-color: olivedrab;
+  --text-color: black;
+}
+
+[color-palette=olive] {
+  --bg-color: olive;
+  --text-color: white;
+}
+
+[color-palette=darkolivegreen] {
+  --bg-color: darkolivegreen;
+  --text-color: white;
+}
+
+[color-palette=mediumaquamarine] {
+  --bg-color: mediumaquamarine;
+  --text-color: black;
+}
+
+[color-palette=darkseagreen] {
+  --bg-color: darkseagreen;
+  --text-color: black;
+}
+
+[color-palette=lightseagreen] {
+  --bg-color: lightseagreen;
+  --text-color: black;
+}
+
+[color-palette=darkcyan] {
+  --bg-color: darkcyan;
+  --text-color: white;
+}
+
+[color-palette=teal] {
+  --bg-color: teal;
+  --text-color: white;
+}
+
+[color-palette=cyan] {
+  --bg-color: cyan;
+  --text-color: black;
+}
+
+[color-palette=lightcyan] {
+  --bg-color: lightcyan;
+  --text-color: black;
+}
+
+[color-palette=paleturquoise] {
+  --bg-color: paleturquoise;
+  --text-color: black;
+}
+
+[color-palette=aquamarine] {
+  --bg-color: aquamarine;
+  --text-color: black;
+}
+
+[color-palette=turquoise] {
+  --bg-color: turquoise;
+  --text-color: black;
+}
+
+[color-palette=mediumturquoise] {
+  --bg-color: mediumturquoise;
+  --text-color: black;
+}
+
+[color-palette=darkturquoise] {
+  --bg-color: darkturquoise;
+  --text-color: white;
+}
+
+[color-palette=cadetblue] {
+  --bg-color: cadetblue;
+  --text-color: white;
+}
+
+[color-palette=steelblue] {
+  --bg-color: steelblue;
+  --text-color: white;
+}
+
+[color-palette=lightsteelblue] {
+  --bg-color: lightsteelblue;
+  --text-color: black;
+}
+
+[color-palette=powderblue] {
+  --bg-color: powderblue;
+  --text-color: black;
+}
+
+[color-palette=lightblue] {
+  --bg-color: lightblue;
+  --text-color: black;
+}
+
+[color-palette=skyblue] {
+  --bg-color: skyblue;
+  --text-color: black;
+}
+
+[color-palette=lightskyblue] {
+  --bg-color: lightskyblue;
+  --text-color: black;
+}
+
+[color-palette=deepskyblue] {
+  --bg-color: deepskyblue;
+  --text-color: black;
+}
+
+[color-palette=dodgerblue] {
+  --bg-color: dodgerblue;
+  --text-color: black;
+}
+
+[color-palette=cornflowerblue] {
+  --bg-color: cornflowerblue;
+  --text-color: black;
+}
+
+[color-palette=royalblue] {
+  --bg-color: royalblue;
+  --text-color: white;
+}
+
+[color-palette=blue] {
+  --bg-color: blue;
+  --text-color: white;
+}
+
+[color-palette=mediumblue] {
+  --bg-color: mediumblue;
+  --text-color: white;
+}
+
+[color-palette=darkblue] {
+  --bg-color: darkblue;
+  --text-color: white;
+}
+
+[color-palette=navy] {
+  --bg-color: navy;
+  --text-color: white;
+}
+
+[color-palette=midnightblue] {
+  --bg-color: midnightblue;
+  --text-color: white;
+}
+
+[color-palette=cornsilk] {
+  --bg-color: cornsilk;
+  --text-color: black;
+}
+
+[color-palette=blanchedalmond] {
+  --bg-color: blanchedalmond;
+  --text-color: black;
+}
+
+[color-palette=bisque] {
+  --bg-color: bisque;
+  --text-color: black;
+}
+
+[color-palette=navajowhite] {
+  --bg-color: navajowhite;
+  --text-color: black;
+}
+
+[color-palette=wheat] {
+  --bg-color: wheat;
+  --text-color: black;
+}
+
+[color-palette=burlywood] {
+  --bg-color: burlywood;
+  --text-color: black;
+}
+
+[color-palette=tan] {
+  --bg-color: tan;
+  --text-color: black;
+}
+
+[color-palette=rosybrown] {
+  --bg-color: rosybrown;
+  --text-color: black;
+}
+
+[color-palette=sandybrown] {
+  --bg-color: sandybrown;
+  --text-color: black;
+}
+
+[color-palette=goldenrod] {
+  --bg-color: goldenrod;
+  --text-color: white;
+}
+
+[color-palette=darkgoldenrod] {
+  --bg-color: darkgoldenrod;
+  --text-color: black;
+}
+
+[color-palette=peru] {
+  --bg-color: peru;
+  --text-color: black;
+}
+
+[color-palette=chocolate] {
+  --bg-color: chocolate;
+  --text-color: black;
+}
+
+[color-palette=saddlebrown] {
+  --bg-color: saddlebrown;
+  --text-color: white;
+}
+
+[color-palette=sienna] {
+  --bg-color: sienna;
+  --text-color: white;
+}
+
+[color-palette=brown] {
+  --bg-color: brown;
+  --text-color: white;
+}
+
+[color-palette=maroon] {
+  --bg-color: maroon;
+  --text-color: white;
+}
+
+[color-palette=white] {
+  --bg-color: white;
+  --text-color: black;
+}
+
+[color-palette=snow] {
+  --bg-color: snow;
+  --text-color: black;
+}
+
+[color-palette=honeydew] {
+  --bg-color: honeydew;
+  --text-color: black;
+}
+
+[color-palette=mintcream] {
+  --bg-color: mintcream;
+  --text-color: black;
+}
+
+[color-palette=azure] {
+  --bg-color: azure;
+  --text-color: black;
+}
+
+[color-palette=aliceblue] {
+  --bg-color: aliceblue;
+  --text-color: black;
+}
+
+[color-palette=ghostwhite] {
+  --bg-color: ghostwhite;
+  --text-color: black;
+}
+
+[color-palette=whitesmoke] {
+  --bg-color: whitesmoke;
+  --text-color: black;
+}
+
+[color-palette=seashell] {
+  --bg-color: seashell;
+  --text-color: black;
+}
+
+[color-palette=beige] {
+  --bg-color: beige;
+  --text-color: black;
+}
+
+[color-palette=oldlace] {
+  --bg-color: oldlace;
+  --text-color: black;
+}
+
+[color-palette=floralwhite] {
+  --bg-color: floralwhite;
+  --text-color: black;
+}
+
+[color-palette=ivory] {
+  --bg-color: ivory;
+  --text-color: black;
+}
+
+[color-palette=antiquewhite] {
+  --bg-color: antiquewhite;
+  --text-color: black;
+}
+
+[color-palette=linen] {
+  --bg-color: linen;
+  --text-color: black;
+}
+
+[color-palette=lavenderblush] {
+  --bg-color: lavenderblush;
+  --text-color: black;
+}
+
+[color-palette=mistyrose] {
+  --bg-color: mistyrose;
+  --text-color: black;
+}
+
+[color-palette=gainsboro] {
+  --bg-color: gainsboro;
+  --text-color: black;
+}
+
+[color-palette=lightgray] {
+  --bg-color: lightgray;
+  --text-color: black;
+}
+
+[color-palette=silver] {
+  --bg-color: silver;
+  --text-color: black;
+}
+
+[color-palette=darkgray] {
+  --bg-color: darkgray;
+  --text-color: white;
+}
+
+[color-palette=gray] {
+  --bg-color: gray;
+  --text-color: white;
+}
+
+[color-palette=dimgray] {
+  --bg-color: dimgray;
+  --text-color: white;
+}
+
+[color-palette=lightslategray] {
+  --bg-color: lightslategray;
+  --text-color: white;
+}
+
+[color-palette=slategray] {
+  --bg-color: slategray;
+  --text-color: white;
+}
+
+[color-palette=darkslategray] {
+  --bg-color: darkslategray;
+  --text-color: white;
+}
+
+[color-palette=black] {
+  --bg-color: black;
+  --text-color: white;
+}
+
+.fill:hover,
+.fill:focus {
+  border-color: var(--hover);
+  color: #fff;
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+button.fill {
+  color: var(--color);
+  transition: 0.25s;
+  --color: #a972cb;
+  --hover: #cb72aa;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}

@@ -1,3 +1,31 @@
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.cover-container {
+  position: fixed;
+  width: 25%;
+  top: 40%;
+  left: 1%;
+  --rotate: 15deg;
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+.cover {
+  --position: relative;
+  background-color: black;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  padding-left: 5%;
+  padding-bottom: 1%;
+  border-left: 1px solid white;
+  font-size: 24px;
+}
+
 button.style-control {
   border: 0;
   color: var(--text-color);

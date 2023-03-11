@@ -16,20 +16,29 @@
 }
 .cover {
   --position: relative;
-  background-color: black;
-  color: white;
-  font-family: "Oswald", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Oswald", "Noto Sans TC";
   width: 100%;
   padding-left: 5%;
   padding-bottom: 1%;
-  border-left: 1px solid white;
+  border-left: 2px solid var(--text-color);
   font-size: 24px;
 }
 
-button.style-control {
-  border: 0;
+button.text-color-control {
+  border: 1px solid var(--text-color);
   color: var(--text-color);
   transition: color 0.8s 0.2s;
+  min-width: 160px;
+  background: none;
+}
+button.bg-color-control {
+  border: none;
+  background-color: var(--bg-color);
+  transition: color 0.8s 0.2s;
+  min-width: 160px;
+  background: none;
 }
 
 body {
@@ -37,717 +46,759 @@ body {
   color: var(--text-color);
 }
 
-[color-palette=indianred] {
+button.color-text-menu-top,.color-bg-menu-top {
+	border: none;
+	background: none;
+	color: var(--text-color);
+	font-family: "Noto Sans TC", sans-serif;
+}
+
+.color-text-menu,.color-bg-menu {
+	position: relative;
+	display: inline-block;
+}
+
+.color-text-menu-dropdown,.color-bg-menu-dropdown {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	padding-bottom: 10px;
+}
+
+.color-text-menu:hover .color-text-menu-dropdown,.color-bg-menu:hover .color-bg-menu-dropdown {
+	display: block;
+}
+
+[color-bg=indianred] {
   --bg-color: indianred;
-  --text-color: black;
 }
 
-[color-palette=lightcoral] {
+[color-bg=lightcoral] {
   --bg-color: lightcoral;
-  --text-color: black;
+  
 }
 
-[color-palette=salmon] {
+[color-bg=salmon] {
   --bg-color: salmon;
-  --text-color: black;
+  
 }
 
-[color-palette=darksalmon] {
+[color-bg=darksalmon] {
   --bg-color: darksalmon;
-  --text-color: black;
+  
 }
 
-[color-palette=crimson] {
+[color-bg=crimson] {
   --bg-color: crimson;
-  --text-color: white;
+  
 }
 
-[color-palette=red] {
+[color-bg=red] {
   --bg-color: red;
-  --text-color: white;
+  
 }
 
-[color-palette=firebrick] {
+[color-bg=firebrick] {
   --bg-color: firebrick;
-  --text-color: white;
+  
 }
 
-[color-palette=darkred] {
+[color-bg=darkred] {
   --bg-color: darkred;
+  
+}
+
+[color-text=indianred] {
+  --text-color: indianred;
+  
+}
+
+[color-text=lightcoral] {
+  --text-color: lightcoral;
+  
+}
+
+[color-text=salmon] {
+  --text-color: salmon;
+  
+}
+
+[color-text=darksalmon] {
+  --text-color: darksalmon;
+  
+}
+
+[color-text=crimson] {
+  --text-color: crimson;
+  
+}
+
+[color-text=red] {
+  --text-color: red;
+  
+}
+
+[color-text=firebrick] {
+  --text-color: firebrick;
+  
+}
+
+[color-text=darkred] {
+  --text-color: darkred;
+  
+}
+
+[color-text=pink] {
+  --text-color: pink;
+  
+}
+
+[color-text=lightpink] {
+  --text-color: lightpink;
+  
+}
+
+[color-text=hotpink] {
+  --text-color: hotpink;
+  
+}
+
+[color-text=deeppink] {
+  --text-color: deeppink;
+  
+}
+
+[color-text=mediumvioletred] {
+  --text-color: mediumvioletred;
+  
+}
+
+[color-text=palevioletred] {
+  --text-color: palevioletred;
+  
+}
+
+[color-text=lightsalmon] {
+  --text-color: lightsalmon;
+  
+}
+
+[color-text=coral] {
+  --text-color: coral;
+  
+}
+
+[color-text=tomato] {
+  --text-color: tomato;
+  
+}
+
+[color-text=orangered] {
+  --text-color: orangered;
+  
+}
+
+[color-text=darkorange] {
+  --text-color: darkorange;
+  
+}
+
+[color-text=orange] {
+  --text-color: orange;
+  
+}
+
+[color-text=gold] {
+  --text-color: gold;
+  
+}
+
+[color-text=yellow] {
+  --text-color: yellow;
+  
+}
+
+[color-text=lightyellow] {
+  --text-color: lightyellow;
+  
+}
+
+[color-text=lemonchiffon] {
+  --text-color: lemonchiffon;
+  
+}
+
+[color-text=lightgoldenrodyellow] {
+  --text-color: lightgoldenrodyellow;
+  
+}
+
+[color-text=papayawhip] {
+  --text-color: papayawhip;
+  
+}
+
+[color-text=moccasin] {
+  --text-color: moccasin;
+  
+}
+
+[color-text=peachpuff] {
+  --text-color: peachpuff;
+  
+}
+
+[color-text=palegoldenrod] {
+  --text-color: palegoldenrod;
+  
+}
+
+[color-text=khaki] {
+  --text-color: khaki;
+  
+}
+
+[color-text=darkkhaki] {
+  --text-color: darkkhaki;
+  
+}
+
+[color-text=lavender] {
+  --text-color: lavender;
+  
+}
+
+[color-text=thistle] {
+  --text-color: thistle;
+  
+}
+
+[color-text=plum] {
+  --text-color: plum;
+  
+}
+
+[color-text=violet] {
+  --text-color: violet;
+  
+}
+
+[color-text=orchid] {
+  --text-color: orchid;
+  
+}
+
+[color-text=fuchsia] {
+  --text-color: fuchsia;
+  
+}
+
+[color-text=mediumorchid] {
+  --text-color: mediumorchid;
+  
+}
+
+[color-text=mediumpurple] {
+  --text-color: mediumpurple;
+  
+}
+
+[color-text=rebeccapurple] {
+  --text-color: rebeccapurple;
+  
+}
+
+[color-text=blueviolet] {
+  --text-color: blueviolet;
+  
+}
+
+[color-text=darkviolet] {
+  --text-color: darkviolet;
+  
+}
+
+[color-text=darkorchid] {
+  --text-color: darkorchid;
+  
+}
+
+[color-text=darkmagenta] {
+  --text-color: darkmagenta;
+  
+}
+
+[color-text=purple] {
+  --text-color: purple;
+  
+}
+
+[color-text=indigo] {
+  --text-color: indigo;
+  
+}
+
+[color-text=slateblue] {
+  --text-color: slateblue;
+  
+}
+
+[color-text=darkslateblue] {
+  --text-color: darkslateblue;
+  
+}
+
+[color-text=mediumslateblue] {
+  --text-color: mediumslateblue;
+  
+}
+
+[color-text=greenyellow] {
+  --text-color: greenyellow;
+  
+}
+
+[color-text=chartreuse] {
+  --text-color: chartreuse;
+  
+}
+
+[color-text=lawngreen] {
+  --text-color: lawngreen;
+  
+}
+
+[color-text=lime] {
+  --text-color: lime;
+  
+}
+
+[color-text=limegreen] {
+  --text-color: limegreen;
+  
+}
+
+[color-text=palegreen] {
+  --text-color: palegreen;
+  
+}
+
+[color-text=lightgreen] {
+  --text-color: lightgreen;
+  
+}
+
+[color-text=mediumspringgreen] {
+  --text-color: mediumspringgreen;
+  
+}
+
+[color-text=springgreen] {
+  --text-color: springgreen;
+  
+}
+
+[color-text=mediumseagreen] {
+  --text-color: mediumseagreen;
+  
+}
+
+[color-text=seagreen] {
+  --text-color: seagreen;
+  
+}
+
+[color-text=forestgreen] {
+  --text-color: forestgreen;
+  
+}
+
+[color-text=green] {
+  --text-color: green;
+  
+}
+
+[color-text=darkgreen] {
+  --text-color: darkgreen;
+  
+}
+
+[color-text=yellowgreen] {
+  --text-color: yellowgreen;
+  
+}
+
+[color-text=olivedrab] {
+  --text-color: olivedrab;
+  
+}
+
+[color-text=olive] {
+  --text-color: olive;
+  
+}
+
+[color-text=darkolivegreen] {
+  --text-color: darkolivegreen;
+  
+}
+
+[color-text=mediumaquamarine] {
+  --text-color: mediumaquamarine;
+  
+}
+
+[color-text=darkseagreen] {
+  --text-color: darkseagreen;
+  
+}
+
+[color-text=lightseagreen] {
+  --text-color: lightseagreen;
+  
+}
+
+[color-text=darkcyan] {
+  --text-color: darkcyan;
+  
+}
+
+[color-text=teal] {
+  --text-color: teal;
+  
+}
+
+[color-text=cyan] {
+  --text-color: cyan;
+  
+}
+
+[color-text=lightcyan] {
+  --text-color: lightcyan;
+  
+}
+
+[color-text=paleturquoise] {
+  --text-color: paleturquoise;
+  
+}
+
+[color-text=aquamarine] {
+  --text-color: aquamarine;
+  
+}
+
+[color-text=turquoise] {
+  --text-color: turquoise;
+  
+}
+
+[color-text=mediumturquoise] {
+  --text-color: mediumturquoise;
+  
+}
+
+[color-text=darkturquoise] {
+  --text-color: darkturquoise;
+  
+}
+
+[color-text=cadetblue] {
+  --text-color: cadetblue;
+  
+}
+
+[color-text=steelblue] {
+  --text-color: steelblue;
+  
+}
+
+[color-text=lightsteelblue] {
+  --text-color: lightsteelblue;
+  
+}
+
+[color-text=powderblue] {
+  --text-color: powderblue;
+  
+}
+
+[color-text=lightblue] {
+  --text-color: lightblue;
+  
+}
+
+[color-text=skyblue] {
+  --text-color: skyblue;
+  
+}
+
+[color-text=lightskyblue] {
+  --text-color: lightskyblue;
+  
+}
+
+[color-text=deepskyblue] {
+  --text-color: deepskyblue;
+  
+}
+
+[color-text=dodgerblue] {
+  --text-color: dodgerblue;
+  
+}
+
+[color-text=cornflowerblue] {
+  --text-color: cornflowerblue;
+  
+}
+
+[color-text=royalblue] {
+  --text-color: royalblue;
+  
+}
+
+[color-text=blue] {
+  --text-color: blue;
+  
+}
+
+[color-text=mediumblue] {
+  --text-color: mediumblue;
+  
+}
+
+[color-text=darkblue] {
+  --text-color: darkblue;
+  
+}
+
+[color-text=navy] {
+  --text-color: navy;
+  
+}
+
+[color-text=midnightblue] {
+  --text-color: midnightblue;
+  
+}
+
+[color-text=cornsilk] {
+  --text-color: cornsilk;
+  
+}
+
+[color-text=blanchedalmond] {
+  --text-color: blanchedalmond;
+  
+}
+
+[color-text=bisque] {
+  --text-color: bisque;
+  
+}
+
+[color-text=navajowhite] {
+  --text-color: navajowhite;
+  
+}
+
+[color-text=wheat] {
+  --text-color: wheat;
+  
+}
+
+[color-text=burlywood] {
+  --text-color: burlywood;
+  
+}
+
+[color-text=tan] {
+  --text-color: tan;
+  
+}
+
+[color-text=rosybrown] {
+  --text-color: rosybrown;
+  
+}
+
+[color-text=sandybrown] {
+  --text-color: sandybrown;
+  
+}
+
+[color-text=goldenrod] {
+  --text-color: goldenrod;
+  
+}
+
+[color-text=darkgoldenrod] {
+  --text-color: darkgoldenrod;
+  
+}
+
+[color-text=peru] {
+  --text-color: peru;
+  
+}
+
+[color-text=chocolate] {
+  --text-color: chocolate;
+  
+}
+
+[color-text=saddlebrown] {
+  --text-color: saddlebrown;
+  
+}
+
+[color-text=sienna] {
+  --text-color: sienna;
+  
+}
+
+[color-text=brown] {
+  --text-color: brown;
+  
+}
+
+[color-text=maroon] {
+  --text-color: maroon;
+  
+}
+
+[color-text=white] {
   --text-color: white;
+  
 }
 
-[color-palette=pink] {
-  --bg-color: pink;
-  --text-color: black;
-}
-
-[color-palette=lightpink] {
-  --bg-color: lightpink;
-  --text-color: black;
-}
-
-[color-palette=hotpink] {
-  --bg-color: hotpink;
-  --text-color: black;
-}
-
-[color-palette=deeppink] {
-  --bg-color: deeppink;
-  --text-color: black;
-}
-
-[color-palette=mediumvioletred] {
-  --bg-color: mediumvioletred;
-  --text-color: white;
-}
-
-[color-palette=palevioletred] {
-  --bg-color: palevioletred;
-  --text-color: black;
-}
-
-[color-palette=lightsalmon] {
-  --bg-color: lightsalmon;
-  --text-color: black;
-}
-
-[color-palette=coral] {
-  --bg-color: coral;
-  --text-color: black;
-}
-
-[color-palette=tomato] {
-  --bg-color: tomato;
-  --text-color: black;
-}
-
-[color-palette=orangered] {
-  --bg-color: orangered;
-  --text-color: black;
-}
-
-[color-palette=darkorange] {
-  --bg-color: darkorange;
-  --text-color: black;
-}
-
-[color-palette=orange] {
-  --bg-color: orange;
-  --text-color: white;
-}
-
-[color-palette=gold] {
-  --bg-color: gold;
-  --text-color: black;
-}
-
-[color-palette=yellow] {
-  --bg-color: yellow;
-  --text-color: black;
-}
-
-[color-palette=lightyellow] {
-  --bg-color: lightyellow;
-  --text-color: black;
-}
-
-[color-palette=lemonchiffon] {
-  --bg-color: lemonchiffon;
-  --text-color: black;
-}
-
-[color-palette=lightgoldenrodyellow] {
-  --bg-color: lightgoldenrodyellow;
-  --text-color: black;
-}
-
-[color-palette=papayawhip] {
-  --bg-color: papayawhip;
-  --text-color: black;
-}
-
-[color-palette=moccasin] {
-  --bg-color: moccasin;
-  --text-color: black;
-}
-
-[color-palette=peachpuff] {
-  --bg-color: peachpuff;
-  --text-color: black;
-}
-
-[color-palette=palegoldenrod] {
-  --bg-color: palegoldenrod;
-  --text-color: black;
-}
-
-[color-palette=khaki] {
-  --bg-color: khaki;
-  --text-color: black;
-}
-
-[color-palette=darkkhaki] {
-  --bg-color: darkkhaki;
-  --text-color: black;
-}
-
-[color-palette=lavender] {
-  --bg-color: lavender;
-  --text-color: black;
-}
-
-[color-palette=thistle] {
-  --bg-color: thistle;
-  --text-color: black;
-}
-
-[color-palette=plum] {
-  --bg-color: plum;
-  --text-color: black;
-}
-
-[color-palette=violet] {
-  --bg-color: violet;
-  --text-color: black;
-}
-
-[color-palette=orchid] {
-  --bg-color: orchid;
-  --text-color: black;
-}
-
-[color-palette=fuchsia] {
-  --bg-color: fuchsia;
-  --text-color: black;
-}
-
-[color-palette=mediumorchid] {
-  --bg-color: mediumorchid;
-  --text-color: black;
-}
-
-[color-palette=mediumpurple] {
-  --bg-color: mediumpurple;
-  --text-color: black;
-}
-
-[color-palette=rebeccapurple] {
-  --bg-color: rebeccapurple;
-  --text-color: white;
-}
-
-[color-palette=blueviolet] {
-  --bg-color: blueviolet;
-  --text-color: black;
-}
-
-[color-palette=darkviolet] {
-  --bg-color: darkviolet;
-  --text-color: white;
-}
-
-[color-palette=darkorchid] {
-  --bg-color: darkorchid;
-  --text-color: white;
-}
-
-[color-palette=darkmagenta] {
-  --bg-color: darkmagenta;
-  --text-color: white;
-}
-
-[color-palette=purple] {
-  --bg-color: purple;
-  --text-color: white;
-}
-
-[color-palette=indigo] {
-  --bg-color: indigo;
-  --text-color: white;
-}
-
-[color-palette=slateblue] {
-  --bg-color: slateblue;
-  --text-color: white;
-}
-
-[color-palette=darkslateblue] {
-  --bg-color: darkslateblue;
-  --text-color: white;
-}
-
-[color-palette=mediumslateblue] {
-  --bg-color: mediumslateblue;
-  --text-color: black;
-}
-
-[color-palette=greenyellow] {
-  --bg-color: greenyellow;
-  --text-color: black;
-}
-
-[color-palette=chartreuse] {
-  --bg-color: chartreuse;
-  --text-color: black;
-}
-
-[color-palette=lawngreen] {
-  --bg-color: lawngreen;
-  --text-color: black;
-}
-
-[color-palette=lime] {
-  --bg-color: lime;
-  --text-color: black;
-}
-
-[color-palette=limegreen] {
-  --bg-color: limegreen;
-  --text-color: black;
-}
-
-[color-palette=palegreen] {
-  --bg-color: palegreen;
-  --text-color: black;
-}
-
-[color-palette=lightgreen] {
-  --bg-color: lightgreen;
-  --text-color: black;
-}
-
-[color-palette=mediumspringgreen] {
-  --bg-color: mediumspringgreen;
-  --text-color: black;
-}
-
-[color-palette=springgreen] {
-  --bg-color: springgreen;
-  --text-color: black;
-}
-
-[color-palette=mediumseagreen] {
-  --bg-color: mediumseagreen;
-  --text-color: black;
-}
-
-[color-palette=seagreen] {
-  --bg-color: seagreen;
-  --text-color: black;
-}
-
-[color-palette=forestgreen] {
-  --bg-color: forestgreen;
-  --text-color: black;
-}
-
-[color-palette=green] {
-  --bg-color: green;
-  --text-color: white;
-}
-
-[color-palette=darkgreen] {
-  --bg-color: darkgreen;
-  --text-color: white;
-}
-
-[color-palette=yellowgreen] {
-  --bg-color: yellowgreen;
-  --text-color: black;
-}
-
-[color-palette=olivedrab] {
-  --bg-color: olivedrab;
-  --text-color: black;
-}
-
-[color-palette=olive] {
-  --bg-color: olive;
-  --text-color: white;
-}
-
-[color-palette=darkolivegreen] {
-  --bg-color: darkolivegreen;
-  --text-color: white;
-}
-
-[color-palette=mediumaquamarine] {
-  --bg-color: mediumaquamarine;
-  --text-color: black;
-}
-
-[color-palette=darkseagreen] {
-  --bg-color: darkseagreen;
-  --text-color: black;
-}
-
-[color-palette=lightseagreen] {
-  --bg-color: lightseagreen;
-  --text-color: black;
-}
-
-[color-palette=darkcyan] {
-  --bg-color: darkcyan;
-  --text-color: white;
-}
-
-[color-palette=teal] {
-  --bg-color: teal;
-  --text-color: white;
-}
-
-[color-palette=cyan] {
-  --bg-color: cyan;
-  --text-color: black;
-}
-
-[color-palette=lightcyan] {
-  --bg-color: lightcyan;
-  --text-color: black;
-}
-
-[color-palette=paleturquoise] {
-  --bg-color: paleturquoise;
-  --text-color: black;
-}
-
-[color-palette=aquamarine] {
-  --bg-color: aquamarine;
-  --text-color: black;
-}
-
-[color-palette=turquoise] {
-  --bg-color: turquoise;
-  --text-color: black;
-}
-
-[color-palette=mediumturquoise] {
-  --bg-color: mediumturquoise;
-  --text-color: black;
-}
-
-[color-palette=darkturquoise] {
-  --bg-color: darkturquoise;
-  --text-color: white;
-}
-
-[color-palette=cadetblue] {
-  --bg-color: cadetblue;
-  --text-color: white;
-}
-
-[color-palette=steelblue] {
-  --bg-color: steelblue;
-  --text-color: white;
-}
-
-[color-palette=lightsteelblue] {
-  --bg-color: lightsteelblue;
-  --text-color: black;
-}
-
-[color-palette=powderblue] {
-  --bg-color: powderblue;
-  --text-color: black;
-}
-
-[color-palette=lightblue] {
-  --bg-color: lightblue;
-  --text-color: black;
-}
-
-[color-palette=skyblue] {
-  --bg-color: skyblue;
-  --text-color: black;
-}
-
-[color-palette=lightskyblue] {
-  --bg-color: lightskyblue;
-  --text-color: black;
-}
-
-[color-palette=deepskyblue] {
-  --bg-color: deepskyblue;
-  --text-color: black;
-}
-
-[color-palette=dodgerblue] {
-  --bg-color: dodgerblue;
-  --text-color: black;
-}
-
-[color-palette=cornflowerblue] {
-  --bg-color: cornflowerblue;
-  --text-color: black;
-}
-
-[color-palette=royalblue] {
-  --bg-color: royalblue;
-  --text-color: white;
-}
-
-[color-palette=blue] {
-  --bg-color: blue;
-  --text-color: white;
-}
-
-[color-palette=mediumblue] {
-  --bg-color: mediumblue;
-  --text-color: white;
-}
-
-[color-palette=darkblue] {
-  --bg-color: darkblue;
-  --text-color: white;
+[color-text=snow] {
+  --text-color: snow;
+  
 }
 
-[color-palette=navy] {
-  --bg-color: navy;
-  --text-color: white;
+[color-text=honeydew] {
+  --text-color: honeydew;
+  
 }
 
-[color-palette=midnightblue] {
-  --bg-color: midnightblue;
-  --text-color: white;
+[color-text=mintcream] {
+  --text-color: mintcream;
+  
 }
 
-[color-palette=cornsilk] {
-  --bg-color: cornsilk;
-  --text-color: black;
-}
-
-[color-palette=blanchedalmond] {
-  --bg-color: blanchedalmond;
-  --text-color: black;
-}
-
-[color-palette=bisque] {
-  --bg-color: bisque;
-  --text-color: black;
-}
-
-[color-palette=navajowhite] {
-  --bg-color: navajowhite;
-  --text-color: black;
-}
-
-[color-palette=wheat] {
-  --bg-color: wheat;
-  --text-color: black;
-}
-
-[color-palette=burlywood] {
-  --bg-color: burlywood;
-  --text-color: black;
-}
-
-[color-palette=tan] {
-  --bg-color: tan;
-  --text-color: black;
-}
-
-[color-palette=rosybrown] {
-  --bg-color: rosybrown;
-  --text-color: black;
-}
-
-[color-palette=sandybrown] {
-  --bg-color: sandybrown;
-  --text-color: black;
-}
-
-[color-palette=goldenrod] {
-  --bg-color: goldenrod;
-  --text-color: white;
-}
-
-[color-palette=darkgoldenrod] {
-  --bg-color: darkgoldenrod;
-  --text-color: black;
-}
-
-[color-palette=peru] {
-  --bg-color: peru;
-  --text-color: black;
-}
-
-[color-palette=chocolate] {
-  --bg-color: chocolate;
-  --text-color: black;
-}
-
-[color-palette=saddlebrown] {
-  --bg-color: saddlebrown;
-  --text-color: white;
+[color-text=azure] {
+  --text-color: azure;
+  
 }
 
-[color-palette=sienna] {
-  --bg-color: sienna;
-  --text-color: white;
+[color-text=aliceblue] {
+  --text-color: aliceblue;
+  
 }
 
-[color-palette=brown] {
-  --bg-color: brown;
-  --text-color: white;
+[color-text=ghostwhite] {
+  --text-color: ghostwhite;
+  
 }
 
-[color-palette=maroon] {
-  --bg-color: maroon;
-  --text-color: white;
+[color-text=whitesmoke] {
+  --text-color: whitesmoke;
+  
 }
 
-[color-palette=white] {
-  --bg-color: white;
-  --text-color: black;
-}
-
-[color-palette=snow] {
-  --bg-color: snow;
-  --text-color: black;
+[color-text=seashell] {
+  --text-color: seashell;
+  
 }
 
-[color-palette=honeydew] {
-  --bg-color: honeydew;
-  --text-color: black;
+[color-text=beige] {
+  --text-color: beige;
+  
 }
 
-[color-palette=mintcream] {
-  --bg-color: mintcream;
-  --text-color: black;
+[color-text=oldlace] {
+  --text-color: oldlace;
+  
 }
 
-[color-palette=azure] {
-  --bg-color: azure;
-  --text-color: black;
+[color-text=floralwhite] {
+  --text-color: floralwhite;
+  
 }
 
-[color-palette=aliceblue] {
-  --bg-color: aliceblue;
-  --text-color: black;
+[color-text=ivory] {
+  --text-color: ivory;
+  
 }
 
-[color-palette=ghostwhite] {
-  --bg-color: ghostwhite;
-  --text-color: black;
+[color-text=antiquewhite] {
+  --text-color: antiquewhite;
+  
 }
 
-[color-palette=whitesmoke] {
-  --bg-color: whitesmoke;
-  --text-color: black;
+[color-text=linen] {
+  --text-color: linen;
+  
 }
 
-[color-palette=seashell] {
-  --bg-color: seashell;
-  --text-color: black;
+[color-text=lavenderblush] {
+  --text-color: lavenderblush;
+  
 }
 
-[color-palette=beige] {
-  --bg-color: beige;
-  --text-color: black;
+[color-text=mistyrose] {
+  --text-color: mistyrose;
+  
 }
 
-[color-palette=oldlace] {
-  --bg-color: oldlace;
-  --text-color: black;
+[color-text=gainsboro] {
+  --text-color: gainsboro;
+  
 }
 
-[color-palette=floralwhite] {
-  --bg-color: floralwhite;
-  --text-color: black;
+[color-text=lightgray] {
+  --text-color: lightgray;
+  
 }
 
-[color-palette=ivory] {
-  --bg-color: ivory;
-  --text-color: black;
+[color-text=silver] {
+  --text-color: silver;
+  
 }
 
-[color-palette=antiquewhite] {
-  --bg-color: antiquewhite;
-  --text-color: black;
+[color-text=darkgray] {
+  --text-color: darkgray;
+  
 }
 
-[color-palette=linen] {
-  --bg-color: linen;
-  --text-color: black;
+[color-text=gray] {
+  --text-color: gray;
+  
 }
 
-[color-palette=lavenderblush] {
-  --bg-color: lavenderblush;
-  --text-color: black;
+[color-text=dimgray] {
+  --text-color: dimgray;
+  
 }
 
-[color-palette=mistyrose] {
-  --bg-color: mistyrose;
-  --text-color: black;
+[color-text=lightslategray] {
+  --text-color: lightslategray;
+  
 }
 
-[color-palette=gainsboro] {
-  --bg-color: gainsboro;
-  --text-color: black;
+[color-text=slategray] {
+  --text-color: slategray;
+  
 }
 
-[color-palette=lightgray] {
-  --bg-color: lightgray;
-  --text-color: black;
+[color-text=darkslategray] {
+  --text-color: darkslategray;
+  
 }
 
-[color-palette=silver] {
-  --bg-color: silver;
+[color-text=black] {
   --text-color: black;
-}
-
-[color-palette=darkgray] {
-  --bg-color: darkgray;
-  --text-color: white;
-}
-
-[color-palette=gray] {
-  --bg-color: gray;
-  --text-color: white;
-}
-
-[color-palette=dimgray] {
-  --bg-color: dimgray;
-  --text-color: white;
-}
-
-[color-palette=lightslategray] {
-  --bg-color: lightslategray;
-  --text-color: white;
-}
-
-[color-palette=slategray] {
-  --bg-color: slategray;
-  --text-color: white;
-}
-
-[color-palette=darkslategray] {
-  --bg-color: darkslategray;
-  --text-color: white;
-}
-
-[color-palette=black] {
-  --bg-color: black;
-  --text-color: white;
-}
-
-.fill:hover,
-.fill:focus {
-  border-color: var(--hover);
-  color: #fff;
-  box-shadow: inset 0 0 0 2em var(--hover);
-}
-
-button.fill {
-  color: var(--color);
-  transition: 0.25s;
-  --color: #a972cb;
-  --hover: #cb72aa;
-  background: none;
-  border: 2px solid;
-  font: inherit;
-  line-height: 1;
-  margin: 0.5em;
-  padding: 1em 2em;
+  
 }

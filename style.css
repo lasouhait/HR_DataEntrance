@@ -762,7 +762,44 @@ button.color-text-menu-top,.color-bg-menu-top {
   --bg-color: black;
   
 }
+[color-text=indianred] {
+  --text-color: indianred;
+}
 
+[color-text=lightcoral] {
+  --text-color: lightcoral;
+  
+}
+
+[color-text=salmon] {
+  --text-color: salmon;
+  
+}
+
+[color-text=darksalmon] {
+  --text-color: darksalmon;
+  
+}
+
+[color-text=crimson] {
+  --text-color: crimson;
+  
+}
+
+[color-text=red] {
+  --text-color: red;
+  
+}
+
+[color-text=firebrick] {
+  --text-color: firebrick;
+  
+}
+
+[color-text=darkred] {
+  --text-color: darkred;
+  
+}
 [color-text=pink] {
   --text-color: pink;
   

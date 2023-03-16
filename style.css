@@ -769,13 +769,13 @@ button.color-text-menu-top,.color-bg-menu-top,.color-text-hover-menu-top {
   --bg-color: black;
   
 }
+
 [color-text=indianred] {
   --text-color: indianred;
 }
 
 [color-text=lightcoral] {
-  --text-color: lightcoral;
-  
+  --text-color: lightcoral;  
 }
 
 [color-text=salmon] {

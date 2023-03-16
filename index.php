@@ -592,6 +592,8 @@
   </div>
     </div>  
   <button></button>
+  <?php
+  echo 'Good'?>
 
   <script  src="./script.js"></script>
 

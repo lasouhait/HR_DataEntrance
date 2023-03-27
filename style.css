@@ -1,56 +1,28 @@
 @keyframes slideInLeft {
   0% {
-    transform: translateX(-100%);
-  }
+    transform: translateX(-100%);}
   100% {
-    transform: translateX(0);
-  }
+    transform: translateX(0);}
 }
 .cover-container {
-  position: fixed;
-  width: 25%;
-  top: 40%;
-  left: 1%;
-  --rotate: 15deg;
-  animation: 1s ease-out 0s 1 slideInLeft;
+  position: fixed;width: 25%;top: 40%;left: 1%;--rotate: 15deg;animation: 1s ease-out 0s 1 slideInLeft;
 }
 .cover {
-  --position: relative;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: "Oswald", "Noto Sans TC";
-  width: 100%;
-  padding-left: 5%;
-  padding-bottom: 1%;
-  border-left: 2px solid var(--text-color);
-  font-size: 24px;
+  --position: relative;background-color: var(--bg-color);color: var(--text-color);font-family: "Oswald", "Noto Sans TC";width: 100%;padding-left: 5%;padding-bottom: 1%;border-left: 2px solid var(--text-color);font-size: 24px;
 }
 
 button.text-color-control {
-  border: 1px solid var(--text-color);
-  color: var(--text-color);
-  transition: color 0.8s 0.2s;
-  min-width: 160px;
-  background: none;
+  border: 1px solid var(--text-color);color: var(--text-color);transition: color 0.8s 0.2s;min-width: 160px;background: none;
 }
 button.bg-color-control {
-  border: none;
-  background-color: var(--bg-color);
-  transition: color 0.8s 0.2s;
-  min-width: 160px;
-  background: none;
+  border: none;background-color: var(--bg-color);transition: color 0.8s 0.2s;min-width: 160px;background: none;
 }
 button.text-hover-color-control {
-  border: none;
-  background-color: var(--bg-color);
-  transition: color 0.8s 0.2s;
-  min-width: 160px;
-  background: none;
+  border: none;background-color: var(--bg-color);transition: color 0.8s 0.2s;min-width: 160px;background: none;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--bg-color);color: var(--text-color);
 }
 
 button.color-text-menu-top,.color-bg-menu-top,.color-text-hover-menu-top {
@@ -75,6 +47,18 @@ button.color-text-menu-top,.color-bg-menu-top,.color-text-hover-menu-top {
 .color-text-menu:hover .color-text-menu-dropdown,.color-bg-menu:hover .color-bg-menu-dropdown,.color-text-hover-menu:hover .color-text-hover-menu-dropdown {
 	display: block;
 }
+.hover-button  a{
+	text-decoration: rgba(0,0,0,0);
+	text-underline-offset: 0.2em;
+	display: inline-block;
+	color: var(--text-color);
+}
+.hover-button a:hover {
+	color: var(--text-hover-color);
+	text-decoration: underline;
+	text-underline-offset: 0.35em;
+    transition: text-decoration-color 350ms, text-underline-offset 350ms;
+}
 
 [color-bg=indianred] {
   --bg-color: indianred;
@@ -82,692 +66,554 @@ button.color-text-menu-top,.color-bg-menu-top,.color-text-hover-menu-top {
 
 [color-bg=lightcoral] {
   --bg-color: lightcoral;
-  
 }
 
 [color-bg=salmon] {
   --bg-color: salmon;
-  
 }
 
 [color-bg=darksalmon] {
   --bg-color: darksalmon;
-  
 }
 
 [color-bg=crimson] {
   --bg-color: crimson;
-  
 }
 
 [color-bg=red] {
   --bg-color: red;
-  
 }
 
 [color-bg=firebrick] {
   --bg-color: firebrick;
-  
 }
 
 [color-bg=darkred] {
   --bg-color: darkred;
-  
 }
 
 [color-bg=pink] {
   --bg-color: pink;
-  
 }
 
 [color-bg=lightpink] {
   --bg-color: lightpink;
-  
 }
 
 [color-bg=hotpink] {
   --bg-color: hotpink;
-  
 }
 
 [color-bg=deeppink] {
   --bg-color: deeppink;
-  
 }
 
 [color-bg=mediumvioletred] {
   --bg-color: mediumvioletred;
-  
 }
 
 [color-bg=palevioletred] {
   --bg-color: palevioletred;
-  
 }
 
 [color-bg=lightsalmon] {
   --bg-color: lightsalmon;
-  
 }
 
 [color-bg=coral] {
   --bg-color: coral;
-  
 }
 
 [color-bg=tomato] {
   --bg-color: tomato;
-  
 }
 
 [color-bg=orangered] {
   --bg-color: orangered;
-  
 }
 
 [color-bg=darkorange] {
   --bg-color: darkorange;
-  
 }
 
 [color-bg=orange] {
   --bg-color: orange;
-  
 }
 
 [color-bg=gold] {
   --bg-color: gold;
-  
 }
 
 [color-bg=yellow] {
   --bg-color: yellow;
-  
 }
 
 [color-bg=lightyellow] {
   --bg-color: lightyellow;
-  
 }
 
 [color-bg=lemonchiffon] {
   --bg-color: lemonchiffon;
-  
 }
 
 [color-bg=lightgoldenrodyellow] {
   --bg-color: lightgoldenrodyellow;
-  
 }
 
 [color-bg=papayawhip] {
   --bg-color: papayawhip;
-  
 }
 
 [color-bg=moccasin] {
   --bg-color: moccasin;
-  
 }
 
 [color-bg=peachpuff] {
   --bg-color: peachpuff;
-  
 }
 
 [color-bg=palegoldenrod] {
   --bg-color: palegoldenrod;
-  
 }
 
 [color-bg=khaki] {
   --bg-color: khaki;
-  
 }
 
 [color-bg=darkkhaki] {
   --bg-color: darkkhaki;
-  
 }
 
 [color-bg=lavender] {
   --bg-color: lavender;
-  
 }
 
 [color-bg=thistle] {
   --bg-color: thistle;
-  
 }
 
 [color-bg=plum] {
   --bg-color: plum;
-  
 }
 
 [color-bg=violet] {
   --bg-color: violet;
-  
 }
 
 [color-bg=orchid] {
   --bg-color: orchid;
-  
 }
 
 [color-bg=fuchsia] {
   --bg-color: fuchsia;
-  
 }
 
 [color-bg=mediumorchid] {
   --bg-color: mediumorchid;
-  
 }
 
 [color-bg=mediumpurple] {
   --bg-color: mediumpurple;
-  
 }
 
 [color-bg=rebeccapurple] {
   --bg-color: rebeccapurple;
-  
 }
 
 [color-bg=blueviolet] {
   --bg-color: blueviolet;
-  
 }
 
 [color-bg=darkviolet] {
   --bg-color: darkviolet;
-  
 }
 
 [color-bg=darkorchid] {
   --bg-color: darkorchid;
-  
 }
 
 [color-bg=darkmagenta] {
   --bg-color: darkmagenta;
-  
 }
 
 [color-bg=purple] {
   --bg-color: purple;
-  
 }
 
 [color-bg=indigo] {
   --bg-color: indigo;
-  
 }
 
 [color-bg=slateblue] {
   --bg-color: slateblue;
-  
 }
 
 [color-bg=darkslateblue] {
   --bg-color: darkslateblue;
-  
 }
 
 [color-bg=mediumslateblue] {
   --bg-color: mediumslateblue;
-  
 }
 
 [color-bg=greenyellow] {
   --bg-color: greenyellow;
-  
 }
 
 [color-bg=chartreuse] {
   --bg-color: chartreuse;
-  
 }
 
 [color-bg=lawngreen] {
   --bg-color: lawngreen;
-  
 }
 
 [color-bg=lime] {
   --bg-color: lime;
-  
 }
 
 [color-bg=limegreen] {
   --bg-color: limegreen;
-  
 }
 
 [color-bg=palegreen] {
   --bg-color: palegreen;
-  
 }
 
 [color-bg=lightgreen] {
   --bg-color: lightgreen;
-  
 }
 
 [color-bg=mediumspringgreen] {
   --bg-color: mediumspringgreen;
-  
 }
 
 [color-bg=springgreen] {
   --bg-color: springgreen;
-  
 }
 
 [color-bg=mediumseagreen] {
   --bg-color: mediumseagreen;
-  
 }
 
 [color-bg=seagreen] {
   --bg-color: seagreen;
-  
 }
 
 [color-bg=forestgreen] {
   --bg-color: forestgreen;
-  
 }
 
 [color-bg=green] {
   --bg-color: green;
-  
 }
 
 [color-bg=darkgreen] {
   --bg-color: darkgreen;
-  
 }
 
 [color-bg=yellowgreen] {
   --bg-color: yellowgreen;
-  
 }
 
 [color-bg=olivedrab] {
   --bg-color: olivedrab;
-  
 }
 
 [color-bg=olive] {
   --bg-color: olive;
-  
 }
 
 [color-bg=darkolivegreen] {
   --bg-color: darkolivegreen;
-  
 }
 
 [color-bg=mediumaquamarine] {
   --bg-color: mediumaquamarine;
-  
 }
 
 [color-bg=darkseagreen] {
   --bg-color: darkseagreen;
-  
 }
 
 [color-bg=lightseagreen] {
   --bg-color: lightseagreen;
-  
 }
 
 [color-bg=darkcyan] {
   --bg-color: darkcyan;
-  
 }
 
 [color-bg=teal] {
   --bg-color: teal;
-  
 }
 
 [color-bg=cyan] {
   --bg-color: cyan;
-  
 }
 
 [color-bg=lightcyan] {
   --bg-color: lightcyan;
-  
 }
 
 [color-bg=paleturquoise] {
   --bg-color: paleturquoise;
-  
 }
 
 [color-bg=aquamarine] {
   --bg-color: aquamarine;
-  
 }
 
 [color-bg=turquoise] {
   --bg-color: turquoise;
-  
 }
 
 [color-bg=mediumturquoise] {
   --bg-color: mediumturquoise;
-  
 }
 
 [color-bg=darkturquoise] {
   --bg-color: darkturquoise;
-  
 }
 
 [color-bg=cadetblue] {
   --bg-color: cadetblue;
-  
 }
 
 [color-bg=steelblue] {
   --bg-color: steelblue;
-  
 }
 
 [color-bg=lightsteelblue] {
   --bg-color: lightsteelblue;
-  
 }
 
 [color-bg=powderblue] {
   --bg-color: powderblue;
-  
 }
 
 [color-bg=lightblue] {
   --bg-color: lightblue;
-  
 }
 
 [color-bg=skyblue] {
   --bg-color: skyblue;
-  
 }
 
 [color-bg=lightskyblue] {
   --bg-color: lightskyblue;
-  
 }
 
 [color-bg=deepskyblue] {
   --bg-color: deepskyblue;
-  
 }
 
 [color-bg=dodgerblue] {
   --bg-color: dodgerblue;
-  
 }
 
 [color-bg=cornflowerblue] {
   --bg-color: cornflowerblue;
-  
 }
 
 [color-bg=royalblue] {
   --bg-color: royalblue;
-  
 }
 
 [color-bg=blue] {
   --bg-color: blue;
-  
 }
 
 [color-bg=mediumblue] {
   --bg-color: mediumblue;
-  
 }
 
 [color-bg=darkblue] {
   --bg-color: darkblue;
-  
 }
 
 [color-bg=navy] {
   --bg-color: navy;
-  
 }
 
 [color-bg=midnightblue] {
   --bg-color: midnightblue;
-  
 }
 
 [color-bg=cornsilk] {
   --bg-color: cornsilk;
-  
 }
 
 [color-bg=blanchedalmond] {
   --bg-color: blanchedalmond;
-  
 }
 
 [color-bg=bisque] {
   --bg-color: bisque;
-  
 }
 
 [color-bg=navajowhite] {
   --bg-color: navajowhite;
-  
 }
 
 [color-bg=wheat] {
   --bg-color: wheat;
-  
 }
 
 [color-bg=burlywood] {
   --bg-color: burlywood;
-  
 }
 
 [color-bg=tan] {
   --bg-color: tan;
-  
 }
 
 [color-bg=rosybrown] {
   --bg-color: rosybrown;
-  
 }
 
 [color-bg=sandybrown] {
   --bg-color: sandybrown;
-  
 }
 
 [color-bg=goldenrod] {
   --bg-color: goldenrod;
-  
 }
 
 [color-bg=darkgoldenrod] {
   --bg-color: darkgoldenrod;
-  
 }
 
 [color-bg=peru] {
   --bg-color: peru;
-  
 }
 
 [color-bg=chocolate] {
   --bg-color: chocolate;
-  
 }
 
 [color-bg=saddlebrown] {
   --bg-color: saddlebrown;
-  
 }
 
 [color-bg=sienna] {
   --bg-color: sienna;
-  
 }
 
 [color-bg=brown] {
   --bg-color: brown;
-  
 }
 
 [color-bg=maroon] {
   --bg-color: maroon;
-  
 }
 
 [color-bg=white] {
   --bg-color: white;
-  
 }
 
 [color-bg=snow] {
   --bg-color: snow;
-  
 }
 
 [color-bg=honeydew] {
   --bg-color: honeydew;
-  
 }
 
 [color-bg=mintcream] {
   --bg-color: mintcream;
-  
 }
 
 [color-bg=azure] {
   --bg-color: azure;
-  
 }
 
 [color-bg=aliceblue] {
   --bg-color: aliceblue;
-  
 }
 
 [color-bg=ghostwhite] {
   --bg-color: ghostwhite;
-  
 }
 
 [color-bg=whitesmoke] {
   --bg-color: whitesmoke;
-  
 }
 
 [color-bg=seashell] {
   --bg-color: seashell;
-  
 }
 
 [color-bg=beige] {
   --bg-color: beige;
-  
 }
 
 [color-bg=oldlace] {
   --bg-color: oldlace;
-  
 }
 
 [color-bg=floralwhite] {
   --bg-color: floralwhite;
-  
 }
 
 [color-bg=ivory] {
   --bg-color: ivory;
-  
 }
 
 [color-bg=antiquewhite] {
   --bg-color: antiquewhite;
-  
 }
 
 [color-bg=linen] {
   --bg-color: linen;
-  
 }
 
 [color-bg=lavenderblush] {
   --bg-color: lavenderblush;
-  
 }
 
 [color-bg=mistyrose] {
   --bg-color: mistyrose;
-  
 }
 
 [color-bg=gainsboro] {
   --bg-color: gainsboro;
-  
 }
 
 [color-bg=lightgray] {
   --bg-color: lightgray;
-  
 }
 
 [color-bg=silver] {
   --bg-color: silver;
-  
 }
 
 [color-bg=darkgray] {
   --bg-color: darkgray;
-  
 }
 
 [color-bg=gray] {
   --bg-color: gray;
-  
 }
 
 [color-bg=dimgray] {
   --bg-color: dimgray;
-  
 }
 
 [color-bg=lightslategray] {
   --bg-color: lightslategray;
-  
 }
 
 [color-bg=slategray] {
   --bg-color: slategray;
-  
 }
 
 [color-bg=darkslategray] {
   --bg-color: darkslategray;
-  
 }
 
 [color-bg=black] {
   --bg-color: black;
-  
 }
 
 [color-text=indianred] {
@@ -780,684 +626,1103 @@ button.color-text-menu-top,.color-bg-menu-top,.color-text-hover-menu-top {
 
 [color-text=salmon] {
   --text-color: salmon;
-  
 }
 
 [color-text=darksalmon] {
   --text-color: darksalmon;
-  
 }
 
 [color-text=crimson] {
   --text-color: crimson;
-  
 }
 
 [color-text=red] {
   --text-color: red;
-  
 }
 
 [color-text=firebrick] {
   --text-color: firebrick;
-  
 }
 
 [color-text=darkred] {
   --text-color: darkred;
-  
 }
 [color-text=pink] {
   --text-color: pink;
-  
 }
 
 [color-text=lightpink] {
   --text-color: lightpink;
-  
 }
 
 [color-text=hotpink] {
   --text-color: hotpink;
-  
 }
 
 [color-text=deeppink] {
   --text-color: deeppink;
-  
 }
 
 [color-text=mediumvioletred] {
   --text-color: mediumvioletred;
-  
 }
 
 [color-text=palevioletred] {
   --text-color: palevioletred;
-  
 }
 
 [color-text=lightsalmon] {
   --text-color: lightsalmon;
-  
 }
 
 [color-text=coral] {
   --text-color: coral;
-  
 }
 
 [color-text=tomato] {
   --text-color: tomato;
-  
 }
 
 [color-text=orangered] {
   --text-color: orangered;
-  
 }
 
 [color-text=darkorange] {
   --text-color: darkorange;
-  
 }
 
 [color-text=orange] {
   --text-color: orange;
-  
 }
 
 [color-text=gold] {
   --text-color: gold;
-  
 }
 
 [color-text=yellow] {
   --text-color: yellow;
-  
 }
 
 [color-text=lightyellow] {
   --text-color: lightyellow;
-  
 }
 
 [color-text=lemonchiffon] {
   --text-color: lemonchiffon;
-  
 }
 
 [color-text=lightgoldenrodyellow] {
   --text-color: lightgoldenrodyellow;
-  
 }
 
 [color-text=papayawhip] {
   --text-color: papayawhip;
-  
 }
 
 [color-text=moccasin] {
   --text-color: moccasin;
-  
 }
 
 [color-text=peachpuff] {
   --text-color: peachpuff;
-  
 }
 
 [color-text=palegoldenrod] {
   --text-color: palegoldenrod;
-  
 }
 
 [color-text=khaki] {
   --text-color: khaki;
-  
 }
 
 [color-text=darkkhaki] {
   --text-color: darkkhaki;
-  
 }
 
 [color-text=lavender] {
   --text-color: lavender;
-  
 }
 
 [color-text=thistle] {
   --text-color: thistle;
-  
 }
 
 [color-text=plum] {
   --text-color: plum;
-  
 }
 
 [color-text=violet] {
   --text-color: violet;
-  
 }
 
 [color-text=orchid] {
   --text-color: orchid;
-  
 }
 
 [color-text=fuchsia] {
   --text-color: fuchsia;
-  
 }
 
 [color-text=mediumorchid] {
   --text-color: mediumorchid;
-  
 }
 
 [color-text=mediumpurple] {
   --text-color: mediumpurple;
-  
 }
 
 [color-text=rebeccapurple] {
   --text-color: rebeccapurple;
-  
 }
 
 [color-text=blueviolet] {
   --text-color: blueviolet;
-  
 }
 
 [color-text=darkviolet] {
   --text-color: darkviolet;
-  
 }
 
 [color-text=darkorchid] {
   --text-color: darkorchid;
-  
 }
 
 [color-text=darkmagenta] {
   --text-color: darkmagenta;
-  
 }
 
 [color-text=purple] {
   --text-color: purple;
-  
 }
 
 [color-text=indigo] {
   --text-color: indigo;
-  
 }
 
 [color-text=slateblue] {
   --text-color: slateblue;
-  
 }
 
 [color-text=darkslateblue] {
   --text-color: darkslateblue;
-  
 }
 
 [color-text=mediumslateblue] {
   --text-color: mediumslateblue;
-  
 }
 
 [color-text=greenyellow] {
   --text-color: greenyellow;
-  
 }
 
 [color-text=chartreuse] {
   --text-color: chartreuse;
-  
 }
 
 [color-text=lawngreen] {
   --text-color: lawngreen;
-  
 }
 
 [color-text=lime] {
   --text-color: lime;
-  
 }
 
 [color-text=limegreen] {
   --text-color: limegreen;
-  
 }
 
 [color-text=palegreen] {
   --text-color: palegreen;
-  
 }
 
 [color-text=lightgreen] {
   --text-color: lightgreen;
-  
 }
 
 [color-text=mediumspringgreen] {
   --text-color: mediumspringgreen;
-  
 }
 
 [color-text=springgreen] {
   --text-color: springgreen;
-  
 }
 
 [color-text=mediumseagreen] {
   --text-color: mediumseagreen;
-  
 }
 
 [color-text=seagreen] {
   --text-color: seagreen;
-  
 }
 
 [color-text=forestgreen] {
   --text-color: forestgreen;
-  
 }
 
 [color-text=green] {
   --text-color: green;
-  
 }
 
 [color-text=darkgreen] {
   --text-color: darkgreen;
-  
 }
 
 [color-text=yellowgreen] {
   --text-color: yellowgreen;
-  
 }
 
 [color-text=olivedrab] {
   --text-color: olivedrab;
-  
 }
 
 [color-text=olive] {
   --text-color: olive;
-  
 }
 
 [color-text=darkolivegreen] {
   --text-color: darkolivegreen;
-  
 }
 
 [color-text=mediumaquamarine] {
   --text-color: mediumaquamarine;
-  
 }
 
 [color-text=darkseagreen] {
   --text-color: darkseagreen;
-  
 }
 
 [color-text=lightseagreen] {
   --text-color: lightseagreen;
-  
 }
 
 [color-text=darkcyan] {
   --text-color: darkcyan;
-  
 }
 
 [color-text=teal] {
   --text-color: teal;
-  
 }
 
 [color-text=cyan] {
   --text-color: cyan;
-  
 }
 
 [color-text=lightcyan] {
   --text-color: lightcyan;
-  
 }
 
 [color-text=paleturquoise] {
   --text-color: paleturquoise;
-  
 }
 
 [color-text=aquamarine] {
   --text-color: aquamarine;
-  
 }
 
 [color-text=turquoise] {
   --text-color: turquoise;
-  
 }
 
 [color-text=mediumturquoise] {
   --text-color: mediumturquoise;
-  
 }
 
 [color-text=darkturquoise] {
   --text-color: darkturquoise;
-  
 }
 
 [color-text=cadetblue] {
   --text-color: cadetblue;
-  
 }
 
 [color-text=steelblue] {
   --text-color: steelblue;
-  
 }
 
 [color-text=lightsteelblue] {
   --text-color: lightsteelblue;
-  
 }
 
 [color-text=powderblue] {
   --text-color: powderblue;
-  
 }
 
 [color-text=lightblue] {
   --text-color: lightblue;
-  
 }
 
 [color-text=skyblue] {
   --text-color: skyblue;
-  
 }
 
 [color-text=lightskyblue] {
   --text-color: lightskyblue;
-  
 }
 
 [color-text=deepskyblue] {
   --text-color: deepskyblue;
-  
 }
 
 [color-text=dodgerblue] {
   --text-color: dodgerblue;
-  
 }
 
 [color-text=cornflowerblue] {
   --text-color: cornflowerblue;
-  
 }
 
 [color-text=royalblue] {
   --text-color: royalblue;
-  
 }
 
 [color-text=blue] {
   --text-color: blue;
-  
 }
 
 [color-text=mediumblue] {
   --text-color: mediumblue;
-  
 }
 
 [color-text=darkblue] {
   --text-color: darkblue;
-  
 }
 
 [color-text=navy] {
   --text-color: navy;
-  
 }
 
 [color-text=midnightblue] {
   --text-color: midnightblue;
-  
 }
 
 [color-text=cornsilk] {
   --text-color: cornsilk;
-  
 }
 
 [color-text=blanchedalmond] {
   --text-color: blanchedalmond;
-  
 }
 
 [color-text=bisque] {
   --text-color: bisque;
-  
 }
 
 [color-text=navajowhite] {
   --text-color: navajowhite;
-  
 }
 
 [color-text=wheat] {
   --text-color: wheat;
-  
 }
 
 [color-text=burlywood] {
   --text-color: burlywood;
-  
 }
 
 [color-text=tan] {
   --text-color: tan;
-  
 }
 
 [color-text=rosybrown] {
   --text-color: rosybrown;
-  
 }
 
 [color-text=sandybrown] {
   --text-color: sandybrown;
-  
 }
 
 [color-text=goldenrod] {
   --text-color: goldenrod;
-  
 }
 
 [color-text=darkgoldenrod] {
   --text-color: darkgoldenrod;
-  
 }
 
 [color-text=peru] {
   --text-color: peru;
-  
 }
 
 [color-text=chocolate] {
   --text-color: chocolate;
-  
 }
 
 [color-text=saddlebrown] {
   --text-color: saddlebrown;
-  
 }
 
 [color-text=sienna] {
   --text-color: sienna;
-  
 }
 
 [color-text=brown] {
   --text-color: brown;
-  
 }
 
 [color-text=maroon] {
   --text-color: maroon;
-  
 }
 
 [color-text=white] {
   --text-color: white;
-  
 }
 
 [color-text=snow] {
   --text-color: snow;
-  
 }
 
 [color-text=honeydew] {
   --text-color: honeydew;
-  
 }
 
 [color-text=mintcream] {
   --text-color: mintcream;
-  
 }
 
 [color-text=azure] {
   --text-color: azure;
-  
 }
 
 [color-text=aliceblue] {
   --text-color: aliceblue;
-  
 }
 
 [color-text=ghostwhite] {
   --text-color: ghostwhite;
-  
 }
 
 [color-text=whitesmoke] {
   --text-color: whitesmoke;
-  
 }
 
 [color-text=seashell] {
   --text-color: seashell;
-  
 }
 
 [color-text=beige] {
   --text-color: beige;
-  
 }
 
 [color-text=oldlace] {
   --text-color: oldlace;
-  
 }
 
 [color-text=floralwhite] {
   --text-color: floralwhite;
-  
 }
 
 [color-text=ivory] {
   --text-color: ivory;
-  
 }
 
 [color-text=antiquewhite] {
   --text-color: antiquewhite;
-  
 }
 
 [color-text=linen] {
   --text-color: linen;
-  
 }
 
 [color-text=lavenderblush] {
   --text-color: lavenderblush;
-  
 }
 
 [color-text=mistyrose] {
   --text-color: mistyrose;
-  
 }
 
 [color-text=gainsboro] {
   --text-color: gainsboro;
-  
 }
 
 [color-text=lightgray] {
   --text-color: lightgray;
-  
 }
 
 [color-text=silver] {
   --text-color: silver;
-  
 }
 
 [color-text=darkgray] {
   --text-color: darkgray;
-  
 }
 
 [color-text=gray] {
   --text-color: gray;
-  
 }
 
 [color-text=dimgray] {
   --text-color: dimgray;
-  
 }
 
 [color-text=lightslategray] {
   --text-color: lightslategray;
-  
 }
 
 [color-text=slategray] {
   --text-color: slategray;
-  
 }
 
 [color-text=darkslategray] {
   --text-color: darkslategray;
-  
 }
 
 [color-text=black] {
   --text-color: black;
-  
+}
+
+[color-text-hover=indianred] {
+  --text-hover-color: indianred;
+}
+
+[color-text-hover=lightcoral] {
+  --text-hover-color: lightcoral;
+}
+
+[color-text-hover=salmon] {
+  --text-hover-color: salmon;
+}
+
+[color-text-hover=darksalmon] {
+  --text-hover-color: darksalmon;
+}
+
+[color-text-hover=crimson] {
+  --text-hover-color: crimson;
+}
+
+[color-text-hover=red] {
+  --text-hover-color: red;
+}
+
+[color-text-hover=firebrick] {
+  --text-hover-color: firebrick;
+}
+
+[color-text-hover=darkred] {
+  --text-hover-color: darkred;
+}
+
+[color-text-hover=pink] {
+  --text-hover-color: pink;
+}
+
+[color-text-hover=lightpink] {
+  --text-hover-color: lightpink;
+}
+
+[color-text-hover=hotpink] {
+  --text-hover-color: hotpink;
+}
+
+[color-text-hover=deeppink] {
+  --text-hover-color: deeppink;
+}
+
+[color-text-hover=mediumvioletred] {
+  --text-hover-color: mediumvioletred;
+}
+
+[color-text-hover=palevioletred] {
+  --text-hover-color: palevioletred;
+}
+
+[color-text-hover=lightsalmon] {
+  --text-hover-color: lightsalmon;
+}
+
+[color-text-hover=coral] {
+  --text-hover-color: coral;
+}
+
+[color-text-hover=tomato] {
+  --text-hover-color: tomato;
+}
+
+[color-text-hover=orangered] {
+  --text-hover-color: orangered;
+}
+
+[color-text-hover=darkorange] {
+  --text-hover-color: darkorange;
+}
+
+[color-text-hover=orange] {
+  --text-hover-color: orange;
+}
+
+[color-text-hover=gold] {
+  --text-hover-color: gold;
+}
+
+[color-text-hover=yellow] {
+  --text-hover-color: yellow;
+}
+
+[color-text-hover=lightyellow] {
+  --text-hover-color: lightyellow;
+}
+
+[color-text-hover=lemonchiffon] {
+  --text-hover-color: lemonchiffon;
+}
+
+[color-text-hover=lightgoldenrodyellow] {
+  --text-hover-color: lightgoldenrodyellow;
+}
+
+[color-text-hover=papayawhip] {
+  --text-hover-color: papayawhip;
+}
+
+[color-text-hover=moccasin] {
+  --text-hover-color: moccasin;
+}
+
+[color-text-hover=peachpuff] {
+  --text-hover-color: peachpuff;
+}
+
+[color-text-hover=palegoldenrod] {
+  --text-hover-color: palegoldenrod;
+}
+
+[color-text-hover=khaki] {
+  --text-hover-color: khaki;
+}
+
+[color-text-hover=darkkhaki] {
+  --text-hover-color: darkkhaki;
+}
+
+[color-text-hover=lavender] {
+  --text-hover-color: lavender;
+}
+
+[color-text-hover=thistle] {
+  --text-hover-color: thistle;
+}
+
+[color-text-hover=plum] {
+  --text-hover-color: plum;
+}
+
+[color-text-hover=violet] {
+  --text-hover-color: violet;
+}
+
+[color-text-hover=orchid] {
+  --text-hover-color: orchid;
+}
+
+[color-text-hover=fuchsia] {
+  --text-hover-color: fuchsia;
+}
+
+[color-text-hover=mediumorchid] {
+  --text-hover-color: mediumorchid;
+}
+
+[color-text-hover=mediumpurple] {
+  --text-hover-color: mediumpurple;
+}
+
+[color-text-hover=rebeccapurple] {
+  --text-hover-color: rebeccapurple;
+}
+
+[color-text-hover=blueviolet] {
+  --text-hover-color: blueviolet;
+}
+
+[color-text-hover=darkviolet] {
+  --text-hover-color: darkviolet;
+}
+
+[color-text-hover=darkorchid] {
+  --text-hover-color: darkorchid;
+}
+
+[color-text-hover=darkmagenta] {
+  --text-hover-color: darkmagenta;
+}
+
+[color-text-hover=purple] {
+  --text-hover-color: purple;
+}
+
+[color-text-hover=indigo] {
+  --text-hover-color: indigo;
+}
+
+[color-text-hover=slateblue] {
+  --text-hover-color: slateblue;
+}
+
+[color-text-hover=darkslateblue] {
+  --text-hover-color: darkslateblue;
+}
+
+[color-text-hover=mediumslateblue] {
+  --text-hover-color: mediumslateblue;
+}
+
+[color-text-hover=greenyellow] {
+  --text-hover-color: greenyellow;
+}
+
+[color-text-hover=chartreuse] {
+  --text-hover-color: chartreuse;
+}
+
+[color-text-hover=lawngreen] {
+  --text-hover-color: lawngreen;
+}
+
+[color-text-hover=lime] {
+  --text-hover-color: lime;
+}
+
+[color-text-hover=limegreen] {
+  --text-hover-color: limegreen;
+}
+
+[color-text-hover=palegreen] {
+  --text-hover-color: palegreen;
+}
+
+[color-text-hover=lightgreen] {
+  --text-hover-color: lightgreen;
+}
+
+[color-text-hover=mediumspringgreen] {
+  --text-hover-color: mediumspringgreen;
+}
+
+[color-text-hover=springgreen] {
+  --text-hover-color: springgreen;
+}
+
+[color-text-hover=mediumseagreen] {
+  --text-hover-color: mediumseagreen;
+}
+
+[color-text-hover=seagreen] {
+  --text-hover-color: seagreen;
+}
+
+[color-text-hover=forestgreen] {
+  --text-hover-color: forestgreen;
+}
+
+[color-text-hover=green] {
+  --text-hover-color: green;
+}
+
+[color-text-hover=darkgreen] {
+  --text-hover-color: darkgreen;
+}
+
+[color-text-hover=yellowgreen] {
+  --text-hover-color: yellowgreen;
+}
+
+[color-text-hover=olivedrab] {
+  --text-hover-color: olivedrab;
+}
+
+[color-text-hover=olive] {
+  --text-hover-color: olive;
+}
+
+[color-text-hover=darkolivegreen] {
+  --text-hover-color: darkolivegreen;
+}
+
+[color-text-hover=mediumaquamarine] {
+  --text-hover-color: mediumaquamarine;
+}
+
+[color-text-hover=darkseagreen] {
+  --text-hover-color: darkseagreen;
+}
+
+[color-text-hover=lightseagreen] {
+  --text-hover-color: lightseagreen;
+}
+
+[color-text-hover=darkcyan] {
+  --text-hover-color: darkcyan;
+}
+
+[color-text-hover=teal] {
+  --text-hover-color: teal;
+}
+
+[color-text-hover=cyan] {
+  --text-hover-color: cyan;
+}
+
+[color-text-hover=lightcyan] {
+  --text-hover-color: lightcyan;
+}
+
+[color-text-hover=paleturquoise] {
+  --text-hover-color: paleturquoise;
+}
+
+[color-text-hover=aquamarine] {
+  --text-hover-color: aquamarine;
+}
+
+[color-text-hover=turquoise] {
+  --text-hover-color: turquoise;
+}
+
+[color-text-hover=mediumturquoise] {
+  --text-hover-color: mediumturquoise;
+}
+
+[color-text-hover=darkturquoise] {
+  --text-hover-color: darkturquoise;
+}
+
+[color-text-hover=cadetblue] {
+  --text-hover-color: cadetblue;
+}
+
+[color-text-hover=steelblue] {
+  --text-hover-color: steelblue;
+}
+
+[color-text-hover=lightsteelblue] {
+  --text-hover-color: lightsteelblue;
+}
+
+[color-text-hover=powderblue] {
+  --text-hover-color: powderblue;
+}
+
+[color-text-hover=lightblue] {
+  --text-hover-color: lightblue;
+}
+
+[color-text-hover=skyblue] {
+  --text-hover-color: skyblue;
+}
+
+[color-text-hover=lightskyblue] {
+  --text-hover-color: lightskyblue;
+}
+
+[color-text-hover=deepskyblue] {
+  --text-hover-color: deepskyblue;
+}
+
+[color-text-hover=dodgerblue] {
+  --text-hover-color: dodgerblue;
+}
+
+[color-text-hover=cornflowerblue] {
+  --text-hover-color: cornflowerblue;
+}
+
+[color-text-hover=royalblue] {
+  --text-hover-color: royalblue;
+}
+
+[color-text-hover=blue] {
+  --text-hover-color: blue;
+}
+
+[color-text-hover=mediumblue] {
+  --text-hover-color: mediumblue;
+}
+
+[color-text-hover=darkblue] {
+  --text-hover-color: darkblue;
+}
+
+[color-text-hover=navy] {
+  --text-hover-color: navy;
+}
+
+[color-text-hover=midnightblue] {
+  --text-hover-color: midnightblue;
+}
+
+[color-text-hover=cornsilk] {
+  --text-hover-color: cornsilk;
+}
+
+[color-text-hover=blanchedalmond] {
+  --text-hover-color: blanchedalmond;
+}
+
+[color-text-hover=bisque] {
+  --text-hover-color: bisque;
+}
+
+[color-text-hover=navajowhite] {
+  --text-hover-color: navajowhite;
+}
+
+[color-text-hover=wheat] {
+  --text-hover-color: wheat;
+}
+
+[color-text-hover=burlywood] {
+  --text-hover-color: burlywood;
+}
+
+[color-text-hover=tan] {
+  --text-hover-color: tan;
+}
+
+[color-text-hover=rosybrown] {
+  --text-hover-color: rosybrown;
+}
+
+[color-text-hover=sandybrown] {
+  --text-hover-color: sandybrown;
+}
+
+[color-text-hover=goldenrod] {
+  --text-hover-color: goldenrod;
+}
+
+[color-text-hover=darkgoldenrod] {
+  --text-hover-color: darkgoldenrod;
+}
+
+[color-text-hover=peru] {
+  --text-hover-color: peru;
+}
+
+[color-text-hover=chocolate] {
+  --text-hover-color: chocolate;
+}
+
+[color-text-hover=saddlebrown] {
+  --text-hover-color: saddlebrown;
+}
+
+[color-text-hover=sienna] {
+  --text-hover-color: sienna;
+}
+
+[color-text-hover=brown] {
+  --text-hover-color: brown;
+}
+
+[color-text-hover=maroon] {
+  --text-hover-color: maroon;
+}
+
+[color-text-hover=white] {
+  --text-hover-color: white;
+}
+
+[color-text-hover=snow] {
+  --text-hover-color: snow;
+}
+
+[color-text-hover=honeydew] {
+  --text-hover-color: honeydew;
+}
+
+[color-text-hover=mintcream] {
+  --text-hover-color: mintcream;
+}
+
+[color-text-hover=azure] {
+  --text-hover-color: azure;
+}
+
+[color-text-hover=aliceblue] {
+  --text-hover-color: aliceblue;
+}
+
+[color-text-hover=ghostwhite] {
+  --text-hover-color: ghostwhite;
+}
+
+[color-text-hover=whitesmoke] {
+  --text-hover-color: whitesmoke;
+}
+
+[color-text-hover=seashell] {
+  --text-hover-color: seashell;
+}
+
+[color-text-hover=beige] {
+  --text-hover-color: beige;
+}
+
+[color-text-hover=oldlace] {
+  --text-hover-color: oldlace;
+}
+
+[color-text-hover=floralwhite] {
+  --text-hover-color: floralwhite;
+}
+
+[color-text-hover=ivory] {
+  --text-hover-color: ivory;
+}
+
+[color-text-hover=antiquewhite] {
+  --text-hover-color: antiquewhite;
+}
+
+[color-text-hover=linen] {
+  --text-hover-color: linen;
+}
+
+[color-text-hover=lavenderblush] {
+  --text-hover-color: lavenderblush;
+}
+
+[color-text-hover=mistyrose] {
+  --text-hover-color: mistyrose;
+}
+
+[color-text-hover=gainsboro] {
+  --text-hover-color: gainsboro;
+}
+
+[color-text-hover=lightgray] {
+  --text-hover-color: lightgray;
+}
+
+[color-text-hover=silver] {
+  --text-hover-color: silver;
+}
+
+[color-text-hover=darkgray] {
+  --text-hover-color: darkgray;
+}
+
+[color-text-hover=gray] {
+  --text-hover-color: gray;
+}
+
+[color-text-hover=dimgray] {
+  --text-hover-color: dimgray;
+}
+
+[color-text-hover=lightslategray] {
+  --text-hover-color: lightslategray;
+}
+
+[color-text-hover=slategray] {
+  --text-hover-color: slategray;
+}
+
+[color-text-hover=darkslategray] {
+  --text-hover-color: darkslategray;
+}
+
+[color-text-hover=black] {
+  --text-hover-color: black;
 }
